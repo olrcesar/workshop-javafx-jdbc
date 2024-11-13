@@ -29,7 +29,7 @@ public class DepartmentDaoJDBC implements DepartmentDao{
 		
 		try {
 			st = conn.prepareStatement(""
-				+ "INSERT INTO dpartment "
+				+ "INSERT INTO department "
 				+ "(Name) VALUES (?)", Statement.RETURN_GENERATED_KEYS);
 			
 			st.setString(1, obj.getName());
